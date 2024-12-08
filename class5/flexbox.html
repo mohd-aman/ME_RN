@@ -16,9 +16,14 @@
             height: 80vh;
             border: 5px solid black;
             display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
+            /* with flex-direction we can interchange primary and cross axis  */
+            /* flex-direction: column; */
+            /* with justify-content we can arrange along primary/main axis ; */
+            /* justify-content: space-evenly; */
+            /* with align-items we can arrange along cross/secondary axis ; */
+            /* align-items: center; */
+            /* flex-wrap: wrap; */
+            /* gap: 1rem; */
         }
         .box{
             background-color: red;
@@ -28,15 +33,23 @@
             font-size: 2rem;
         }
         .two{
-
+            background-color: yellow;
+            flex-grow: 1; 
+        }
+        .three{
+            background-color: blue;
+            flex-shrink: 3;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="box one">1</div>
-        <div class="box two">2</div>
-        <div class="box three">3</div>
+        <div class="box one"></div>
+        <div class="box two"></div>
+        <div class="box three"></div>
+        <!-- <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div> -->
     </div>
 </body>
 </html>
